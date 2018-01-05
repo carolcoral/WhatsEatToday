@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>今天吃什么？</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="js/index.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				alert("本程序为0.1试用版，目前无法重复提交生成菜单，请谅解！");
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="content">
+			<div id="title" class="title">
+				<h1 align="center">今天吃什么？</h1>
+				<p style="margin-top: 5px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本程序主要为选择恐惧症的患者制作（好吧，主要就是作者太懒，被女朋友逼问每天吃什么已经感觉到了绝望了。。。。PS:对，本人可是有女票的人！）</p>
+			</div>
+			<div id="container" class="container">
+				<form id="myForm" class="myForm">
+					<div id="menu" class="num">
+						请输入您今天想要的荤菜数量:
+						<input type="number" name="MenuNum" id="MenuNum" value="" />
+					</div>
+					<div id="sucai" class="num">
+						请输入您今天想要的素菜数量:
+						<input type="number" name="sucaiNum" id="sucaiNum" value="" />
+					</div>
+					<div id="tang" class="num">
+						请输入您今天想要的汤品数量:
+						<input type="number" name="TangNum" id="TangNum" value="" />
+					</div>
+					<div id="res" class="res">
+						<h2>今天吃这些：</h2>
+						<div id="rescont" class="rescont">
+							<p style="overflow: hidden;width: 200px;height: 20px;margin-top: 4px;">---------------荤菜---------------</p>
+							<span id="menures"></span>
+							<p style="overflow: hidden;width: 200px;height: 20px;">---------------素菜---------------</p>
+							<span id="sucaires"></span>
+							<p style="overflow: hidden;width: 200px;height: 20px;">---------------汤品---------------</p>
+							<span id="tangres"></span>
+						</div>
+					</div>
+					<input id="Allsubmit" class="Allsubmit" value="提交" type="button" onclick="javascript:submitMenu()">
+					<input id="Ressubmit" class="Allsubmit" value="重置" type="reset" onclick="javascript:formReset()">
+				</form>
+
+			</div>
+			<div id="footer" class="footer">
+				@版权所有 2018-2020 By <a href="https://github.com/carolcoral/">CarolCoral
+			</div>
+		</div>
+	</body>
+
+</html>
