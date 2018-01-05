@@ -17,7 +17,7 @@ function submitMenu() {
 //	if(menures.value.length>0) {
 //		formReset();
 //	}
-	if(inputMenuNum > menu.length || inputMenuNum < 0 || inputTangNum < 0 || inputTangNum > tang.length || inputsucaiNum > sucaires.length || inputsucaiNum < 0) {
+	if(inputMenuNum > menu.length || inputMenuNum < 0 || inputTangNum < 0 || inputTangNum > tang.length || inputsucaiNum > sucai.length || inputsucaiNum < 0) {
 		alert("对不起，您输入的数值已经超过了本系统的存储！目前共有" + menu.length + "道荤菜，" + sucai.length + "道素菜和" + tang.length + "道汤。");
 	} else {
 		//					if(menures.value == "" && tangres.value == "") {
